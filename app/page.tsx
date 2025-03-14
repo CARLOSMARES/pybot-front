@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageCircle, Bot, Zap, Shield, Globe, ArrowRight } from "lucide-react"
 import ChatBot from "@/components/chat-bot"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ArrowRight, Bot, Globe, MessageCircle, Shield, Zap } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-muted py-20">
+      {/* <section className="bg-muted py-20">
         <div className="container px-4 md:px-6">
           <div className="mb-12 flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -165,10 +165,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container px-4 md:px-6">
           <div className="mb-12 flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Planes y precios</h2>
@@ -434,7 +434,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-primary text-primary-foreground py-20">
@@ -471,7 +471,7 @@ export default function Home() {
       <ChatBot />
 
       {/* Footer */}
-      <footer className="border-t bg-background py-6 md:py-12">
+      {/* <footer className="border-t bg-background py-6 md:py-12">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
             <div className="space-y-4">
@@ -655,7 +655,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   )
 }
