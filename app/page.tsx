@@ -1,8 +1,8 @@
-import ChatBot from "@/components/chat-bot"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Bot, Globe, MessageCircle, Shield, Zap } from "lucide-react"
-import Link from "next/link"
+import ChatBot from "@/components/chat-bot";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, Bot, Facebook, Globe, Instagram, MessageCircle, Shield, Twitter, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,14 +11,18 @@ export default function Home() {
       <section className="bg-gradient-to-b from-primary/10 to-background py-20">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                Potencia tu sitio web con nuestro <span className="text-primary">Bot Inteligente</span>
-              </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Mejora la experiencia de tus usuarios con respuestas instantáneas, soporte 24/7 y conversaciones
-                naturales.
-              </p>
+            {/* Sección modificada para incluir el logo */}
+            <img src="/Metrix-logotipo-b.png" alt="Logo" className="w-30 h-30" />
+            <div className="flex items-center space-x-4">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                  Potencia tu sitio web con nuestro <span className="text-primary">Bot Inteligente</span>
+                </h1>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  Mejora la experiencia de tus usuarios con respuestas instantáneas, soporte 24/7 y conversaciones
+                  naturales.
+                </p>
+              </div>
             </div>
             <div className="space-x-4">
               <Button size="lg" className="h-12">
@@ -111,6 +115,34 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <Facebook className="h-10 w-10 text-primary mb-2" />
+                  <Twitter className="h-10 w-10 text-primary mb-2" />
+                  <Instagram className="h-10 w-10 text-primary mb-2" />
+                </div>
+                <CardTitle>Integración Con Redes Sociales</CardTitle>
+                <CardDescription>Conecta tu bot con las principales redes sociales para potenciar tu interacción en línea.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  Integra nuestro bot con Facebook, Twitter e Instagram y automatiza respuestas para mejorar la comunicación directa con tus clientes.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <MessageCircle className="h-10 w-10 text-primary mb-2" />
+                <CardTitle>Integración Con WhatsApp</CardTitle>
+                <CardDescription>Integra nuestro bot en WhatsApp para atención instantánea y personalizada.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  Permite a tus clientes contactarte de forma directa y rápida a través de WhatsApp, ofreciendo soporte inmediato y mejorando la satisfacción del cliente.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -168,7 +200,7 @@ export default function Home() {
       </section> */}
 
       {/* Pricing Section */}
-      {/* <section className="py-20">
+      <section className="py-20">
         <div className="container px-4 md:px-6">
           <div className="mb-12 flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Planes y precios</h2>
@@ -181,9 +213,9 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Plan Básico</CardTitle>
                 <CardDescription>Para pequeños negocios</CardDescription>
-                <div className="mt-4 text-4xl font-bold">
+                {/* <div className="mt-4 text-4xl font-bold">
                   $29<span className="text-base font-normal text-muted-foreground">/mes</span>
-                </div>
+                </div> */}
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -251,9 +283,9 @@ export default function Home() {
                 </div>
                 <CardTitle>Plan Profesional</CardTitle>
                 <CardDescription>Para negocios en crecimiento</CardDescription>
-                <div className="mt-4 text-4xl font-bold">
+                {/* <div className="mt-4 text-4xl font-bold">
                   $79<span className="text-base font-normal text-muted-foreground">/mes</span>
-                </div>
+                </div> */}
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -335,9 +367,9 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Plan Empresarial</CardTitle>
                 <CardDescription>Para grandes empresas</CardDescription>
-                <div className="mt-4 text-4xl font-bold">
+                {/* <div className="mt-4 text-4xl font-bold">
                   $199<span className="text-base font-normal text-muted-foreground">/mes</span>
-                </div>
+                </div> */}
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -434,7 +466,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="bg-primary text-primary-foreground py-20">
